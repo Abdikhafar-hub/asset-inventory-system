@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .left {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .right {
+    flex: 1;
+    background: #005f73;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    background: #fff;
+    border-radius: 8px;
+    padding: 40px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #005f73;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .loginButton {
+  
+    width: 105%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0a9396;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loginButton:hover {
+    background-color: #005f73;
+  }
+  
+  
+  .checkboxContainer {
+     text-decoration: underline; 
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .checkboxContainer input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid #0a9396;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .checkboxContainer input[type="checkbox"]:checked {
+    background-color: #0a9396;
+    border-color: #005f73;
+  }
+  
+  .checkboxContainer input[type="checkbox"]:checked::after {
+    content: "✓";
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .checkboxContainer label {
+    cursor: pointer;
+  }
+  /* Login.module.css */
+  
+  .login-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50;
+  }
+  
+  .login-container .wrapper {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: black;
+    box-shadow: 0 0 50px #0ef;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+  }
+  
+  .login-container .wrapper:hover {
+    animation: animate 1s linear infinite;
+  }
+  
+  @keyframes animate {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .login-container .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 1s ease-in-out;
+  }
+  
+  .login-container .wrapper.active .form-wrapper.sign-in {
+    transform: translateY(-450px);
+  }
+  
+  .login-container .wrapper .form-wrapper .sign-up {
+    position: absolute;
+    top: 450px;
+    left: 0;
+  }
+  
+  .login-container .wrapper.active .form-wrapper.sign-up {
+    transform: translateY(-450px);
+  }
+  
+  .login-container h1 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-container .input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .login-container .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .login-container .input-group input {
+    width: 420px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .login-container .input-group input:focus ~ label,
+  .login-container .input-group input:valid ~ label {
+    top: -5px;
+  }
+  
+  .login-container .rememder {
+    margin: -5px 0 15px 5px;
+  }
+  
+  .login-container .rememder label {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .login-container .rememder label input {
+    accent-color: #0ef;
+  }
+  
+  .login-container button {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+  }
+  
+  .login-container .signup-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  
+  .login-container .signup-link p {
+    color: #fff;
+  }
+  
+  .login-container .signup-link p a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-container .signup-link p a:hover {
+    text-decoration: underline;
+  }
+  /* Login.module.css */
+  
+  .login-container .home-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container .home-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  /* Styling for "Asset Maze" Title */
+  .login-container .main-title {
+    font-size: 36px;
+    color: #0ef;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #0ef;
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    color: #0ef;
+    text-align: center;
+    font-weight: bold;
+  }
+  

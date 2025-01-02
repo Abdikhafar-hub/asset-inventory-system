@@ -1,0 +1,296 @@
+{
+    "Users": [
+  {
+    "id": "1",
+    "username": "admin_user",
+    "email": "admin@example.com",
+    "password": "hashedpassword1",
+    "role": "Admin",
+    "department_id": 1,
+    "created_at": "2024-11-01T10:00:00",
+    "updated_at": "2024-11-01T10:00:00"
+  },
+  {
+    "id": "2",
+    "username": "proc_manager",
+    "email": "proc_manager@example.com",
+    "password": "hashedpassword2",
+    "role": "Procurement Manager",
+    "department_id": 1,
+    "created_at": "2024-11-02T10:00:00",
+    "updated_at": "2024-11-02T10:00:00"
+  },
+  {
+    "id": "3",
+    "username": "hr_user",
+    "email": "hr_user@example.com",
+    "password": "123456",
+    "role": "Employee",
+    "department_id": 2,
+    "created_at": "2024-11-03T10:00:00",
+    "updated_at": "2024-11-03T10:00:00"
+  }
+],
+
+    
+    "Roles": [
+      {
+        "id": "1",
+        "role_name": "Admin",
+        "can_view_requests": true,
+        "can_approve_requests": true,
+        "can_manage_assets": true,
+        "can_view_all_requests": true
+      },
+      {
+        "id": "2",
+        "role_name": "Procurement Manager",
+        "can_view_requests": true,
+        "can_approve_requests": true,
+        "can_manage_assets": true,
+        "can_view_all_requests": false
+      },
+      {
+        "id": "3",
+        "role_name": "Employee",
+        "can_view_requests": false,
+        "can_approve_requests": false,
+        "can_manage_assets": false,
+        "can_view_all_requests": false
+      }
+    ],
+    "Departments": [
+      {
+        "id": "1",
+        "department_name": "IT"
+      },
+      {
+        "id": "2",
+        "department_name": "HR"
+      },
+      {
+        "id": "3",
+        "department_name": "Finance"
+      },
+      {
+        "id": "4",
+        "department_name": "Marketing"
+      }
+    ],
+    "Assets": [
+      {
+        "id": "2",
+        "asset_name": "Office Chair",
+        "description": "Ergonomic office chair",
+        "category_id": 2,
+        "image_url": "src/assets/chair.jpg",
+        "status": "Allocated",
+        "allocated_to": 3,
+        "department_id": 2,
+        "created_at": "2024-11-01T10:30:00",
+        "updated_at": "2024-11-01T10:30:00"
+      },
+      {
+        "id": "3",
+        "asset_name": "Desktop Monitor",
+        "description": "24-inch LED Monitor",
+        "category_id": 1,
+        "image_url": "src/assets/monitor.jpg",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 1,
+        "created_at": "2024-11-01T11:00:00",
+        "updated_at": "2024-11-01T11:00:00"
+      },
+      {
+        "id": "4",
+        "asset_name": "Projector",
+        "description": "Epson HD Projector",
+        "category_id": 1,
+        "image_url": "src/assets/projector.jpg",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 3,
+        "created_at": "2024-11-01T11:30:00",
+        "updated_at": "2024-11-01T11:30:00"
+      },
+      {
+        "id": "5",
+        "asset_name": "Whiteboard",
+        "description": "Magnetic Whiteboard 4x6 ft",
+        "category_id": 2,
+        "image_url": "src/assets/board.jpeg",
+        "status": "In Use",
+        "allocated_to": 2,
+        "department_id": 4,
+        "created_at": "2024-11-01T12:00:00",
+        "updated_at": "2024-11-01T12:00:00"
+      },
+      {
+        "id": "6",
+        "asset_name": "Printer",
+        "description": "HP LaserJet Pro",
+        "category_id": 1,
+        "image_url": "src/assets/laserjet.jpg",
+        "status": "Under Maintenance",
+        "allocated_to": null,
+        "department_id": 1,
+        "created_at": "2024-11-02T09:00:00",
+        "updated_at": "2024-11-02T09:00:00"
+      },
+      {
+        "id": "7",
+        "asset_name": "Conference Table",
+        "description": "10-seater conference table",
+        "category_id": 2,
+        "image_url": "src/assets/table.jpeg",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 3,
+        "created_at": "2024-11-02T09:30:00",
+        "updated_at": "2024-11-02T09:30:00"
+      },
+      {
+        "id": "8",
+        "asset_name": "Keyboard",
+        "description": "Wireless Keyboard",
+        "category_id": 1,
+        "image_url": "src/assets/keyboard.jpg",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 1,
+        "created_at": "2024-11-02T10:00:00",
+        "updated_at": "2024-11-02T10:00:00"
+      },
+      {
+        "id": "9",
+        "asset_name": "Tablet",
+        "description": "Apple iPad Air",
+        "category_id": 1,
+        "image_url": "src/assets/ipad.jpeg",
+        "status": "In Use",
+        "allocated_to": 4,
+        "department_id": 2,
+        "created_at": "2024-11-02T10:30:00",
+        "updated_at": "2024-11-02T10:30:00"
+      },
+      {
+        "id": "10",
+        "asset_name": "File Cabinet",
+        "description": "4-drawer metal file cabinet",
+        "category_id": 2,
+        "image_url": "src/assets/drawer.jpg",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 3,
+        "created_at": "2024-11-02T11:00:00",
+        "updated_at": "2024-11-02T11:00:00"
+      },
+      {
+        "id": "11",
+        "asset_name": "Camera",
+        "description": "Canon DSLR Camera",
+        "category_id": 1,
+        "image_url": "src/assets/camera.png",
+        "status": "Available",
+        "allocated_to": null,
+        "department_id": 4,
+        "created_at": "2024-11-02T11:30:00",
+        "updated_at": "2024-11-02T11:30:00"
+      },
+      {
+        "id": "12",
+        "asset_name": "Scanner",
+        "description": "High-speed document scanner",
+        "category_id": 1,
+        "image_url": "src/assets/scanner.jpg",
+        "status": "Allocated",
+        "allocated_to": 5,
+        "department_id": 3,
+        "created_at": "2024-11-02T12:00:00",
+        "updated_at": "2024-11-02T12:00:00"
+      },
+      {
+        "id": "0957",
+        "asset_name": "",
+        "description": "",
+        "category_id": "",
+        "condition": "",
+        "status": "Available",
+        "department_id": ""
+      }
+    ],
+    "Categories": [
+      {
+        "id": "1",
+        "category_name": "Electronics",
+        "description": "Computers, Phones, and other electronic devices"
+      },
+      {
+        "id": "2",
+        "category_name": "Furniture",
+        "description": "Office furniture, chairs, desks"
+      },
+      {
+        "id": "3",
+        "category_name": "Stationery",
+        "description": "Paper, pens, notebooks, etc."
+      }
+    ],
+    "Requests": [
+      {
+        "id": "1",
+        "request_type": "New Asset",
+        "asset_id": null,
+        "requested_by": 3,
+        "department_id": 2,
+        "quantity": 1,
+        "urgency": "Medium",
+        "reason": "New employee joining",
+        "status": "Rejected",
+        "status_id": 2,
+        "created_at": "2024-11-04T10:00:00",
+        "updated_at": "2024-11-04T10:00:00"
+      },
+      {
+        "id": "2",
+        "request_type": "Repair",
+        "asset_id": 1,
+        "requested_by": 3,
+        "department_id": 2,
+        "quantity": 1,
+        "urgency": "High",
+        "reason": "Laptop screen is flickering",
+        "status": "Approved",
+        "status_id": 2,
+        "created_at": "2024-11-05T11:00:00",
+        "updated_at": "2024-11-05T11:00:00"
+      },
+      {
+        "id": "3",
+        "request_type": "New Asset",
+        "quantity": "1",
+        "urgency": "High",
+        "reason": "lorem ipsum",
+        "status": "Pending",
+        "created_at": "2024-11-18T08:32:53.536Z"
+      }
+    ],
+    "Request_statuses": [
+      {
+        "id": "1",
+        "status_name": "Pending",
+        "description": "Request is awaiting approval"
+      },
+      {
+        "id": "2",
+        "status_name": "Approved",
+        "description": "Request has been approved"
+      },
+      {
+        "id": "3",
+        "status_name": "Rejected",
+        "description": "Request has been rejected"
+      }
+    ]
+  }

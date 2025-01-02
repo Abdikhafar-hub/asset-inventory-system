@@ -1,0 +1,118 @@
+.signup-container * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2c3e50;
+}
+
+.signup-container .wrapper {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background: black;
+    box-shadow: 0 0 50px #0ef;
+    border-radius: 20px;
+    padding: 40px;
+    overflow: hidden;
+    color: white;
+    animation: animate 1s linear infinite; /* Adding animation */
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.signup-container h1 {
+    font-size: 30px;
+    color: #0ef;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.signup-container h2 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signup-container .input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.signup-container .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.signup-container .input-group input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.signup-container .input-group input:focus ~ label,
+.signup-container .input-group input:valid ~ label {
+    top: -5px;
+}
+
+.signup-container .signup-button {
+    width: 100%;
+    height: 40px;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.signup-container .login-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.signup-container .login-link p {
+    color: #fff;
+}
+
+.signup-container .login-link p a {
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup-container .login-link p a:hover {
+    text-decoration: underline;
+}
