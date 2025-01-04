@@ -39,7 +39,7 @@ function AboutPage() {
       <section style={styles.section}>
         <h2 style={styles.subheading}>What We Do</h2>
         <p style={styles.paragraph}>
-          Asset Maze offers a comprehensive yet easy-to-use platform for tracking a wide range of assets. Whether it’s physical equipment, vehicles, inventory, or digital resources, our platform provides tools to monitor and manage assets across their entire lifecycle—from acquisition to maintenance to disposal. Key features include real-time asset tracking, automated maintenance alerts, and insightful reporting, allowing businesses to stay informed about the health, location, and performance of their assets at all times.
+          We offers a comprehensive yet easy-to-use platform for tracking a wide range of assets. Whether it’s physical equipment, vehicles, inventory, or digital resources, our platform provides tools to monitor and manage assets across their entire lifecycle—from acquisition to maintenance to disposal. Key features include real-time asset tracking, automated maintenance alerts, and insightful reporting, allowing businesses to stay informed about the health, location, and performance of their assets at all times.
         </p>
       </section>
 
