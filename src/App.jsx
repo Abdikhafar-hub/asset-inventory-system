@@ -36,7 +36,7 @@ function App() {
     fetchUser();
   }, []);
 
-  if (loading) return <div>Loading</div>;
+  if (loading) return <div>Loading...</div>;
 
   const handleLogout = async () => {
     await logoutUser();
