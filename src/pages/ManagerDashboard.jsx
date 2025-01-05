@@ -117,7 +117,7 @@ function ProcManagerDashboard() {
       </div>
 
       <div style={styles.content}>
-        <h1 style={styles.contentTitle}>Proc Manager Dashboard</h1>
+        <h1 style={styles.contentTitle}>Procure Manager Dashboard</h1>
 
         {selectedSection === 'viewAssets' && (
           <div style={styles.section}>
