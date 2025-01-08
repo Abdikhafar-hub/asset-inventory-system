@@ -104,7 +104,7 @@ function ProcManagerDashboard() {
         <AiOutlineUser style={styles.userIcon} />
         <strong>{user.username}</strong>
       </div> 
-        <h2 style={styles.sidebarTitle}>Proc Manager Dashboard</h2>
+        <h2 style={styles.sidebarTitle}> Manager Dashboard</h2>
         <ul style={styles.navList}>
           <li style={styles.navItem} onClick={() => handleSectionChange('viewAssets')}>View All Assets</li>
           <li style={styles.navItem} onClick={() => handleSectionChange('viewRequests')}>View Requests</li>
