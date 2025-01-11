@@ -199,7 +199,7 @@ function AdminDashboard() {
         {/* View Assets Section */}
         {selectedSection === 'viewAssets' && (
           <div style={styles.section}>
-            <h2 style={styles.sectionTitle}>All Assets available</h2>
+            <h2 style={styles.sectionTitle}>All Assets</h2>
             <div style={styles.assetGrid}>
               {assets.length > 0 ? (
                 assets.map((asset) => (
