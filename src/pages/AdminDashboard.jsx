@@ -215,7 +215,7 @@ function AdminDashboard() {
                   </div>
                 ))
               ) : (
-                <p>No assets available to display at the moment.</p>
+                <p>No assets available to display.</p>
               )}
             </div>
           </div>
