@@ -183,7 +183,7 @@ function AdminDashboard() {
         <strong>{user ? user.username : 'Loading...'}</strong> {/* Add a fallback text or loading message */}
       </div>
 
-        <h2 style={styles.sidebarTitle}>Admin Dashboard</h2>
+        <h2 style={styles.sidebarTitle}>Administ Dashboard</h2>
         <ul style={styles.navList}>
           <li style={styles.navItem} onClick={() => handleSectionChange('viewAssets')}>View All Assets</li>
           <li style={styles.navItem} onClick={() => handleSectionChange('viewRequests')}>View Requests</li>
