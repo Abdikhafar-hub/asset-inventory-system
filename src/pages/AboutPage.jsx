@@ -65,7 +65,7 @@ function AboutPage() {
       </section>
 
       <p style={styles.footerText}>
-        Asset Maze isn't just about software—it's about creating a more organized, efficient world where businesses can thrive without the burden of asset mismanagement. Join us on this journey, and discover how Asset Maze can transform the way you manage and grow your assets.
+        Asset Maze isn't just about software it's about creating a more organized, efficient world where businesses can thrive without the burden of asset mismanagement. Join us on this journey, and discover how Asset Maze can transform the way you manage and grow your assets.
       </p>
 
       {/* Back to Home Button */}

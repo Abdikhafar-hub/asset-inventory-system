@@ -121,7 +121,7 @@ function ProcManagerDashboard() {
 
         {selectedSection === 'viewAssets' && (
           <div style={styles.section}>
-            <h2 style={styles.sectionTitle}>All Assets</h2>
+            <h2 style={styles.sectionTitle}>All Assets </h2>
 
             <div style={styles.filterContainer}>
               <select
