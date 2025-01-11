@@ -194,7 +194,7 @@ function AdminDashboard() {
       </div>
 
       <div style={styles.content}>
-        <h1 style={styles.contentTitle}>Admin Dashboard</h1>
+        <h1 style={styles.contentTitle}>Administra Dashboard</h1>
 
         {/* View Assets Section */}
         {selectedSection === 'viewAssets' && (
